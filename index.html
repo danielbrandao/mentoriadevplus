@@ -17,7 +17,7 @@
     }
 
     header{
-      width: 30%;
+      width: 20%;
     }
 
     .card {
@@ -36,15 +36,18 @@
 
     @media (max-width: 768px){
         header{
-            width: 100%;
+            width: 0%;
 
+        }
+        .dev_logo{
+            width: 0%;
         }
     }
   </style>
 </head>
 <body>
 <header class="">
-    <img src="dev_logo.png" width="100%"/>
+    <img class="dev_logo" src="dev_logo.png" width="100%"/>
 </header>
 <div class="card p-4 col-md-6">
 
@@ -72,7 +75,7 @@
         <div class="mb-3">
         <label for="perfil" class="form-label">Perfil</label>
         <Select name="perfil" class="form-select" id="perfil" required>
-            <option selected>Escolha o perfil que mais te identifica</option>
+            <option selected>O que mais te identifica</option>
             <option value="Front-end">Front-end</option>
             <option value="Back-end">Back-end</option>
             <option value="Full Stack">Full Stack</option>
