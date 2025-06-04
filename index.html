@@ -73,9 +73,9 @@
         </div>
 
         <div class="mb-3">
-        <label for="perfil" class="form-label">Perfil</label>
+        <label for="perfil" class="form-label">Perfil:</label>
         <Select name="perfil" class="form-select" id="perfil" required>
-            <option selected>O que mais te identifica</option>
+            <option selected disabled>O que mais te identifica</option>
             <option value="Front-end">Front-end</option>
             <option value="Back-end">Back-end</option>
             <option value="Full Stack">Full Stack</option>
@@ -86,11 +86,34 @@
         </div>
 
         <div class="mb-3">
+        <label for="perfil" class="form-label">Principal desafio hoje:</label>
+        <Select name="perfil" class="form-select" id="perfil" required>
+            <option selected disabled>Qual sua motivação atual?</option>
+            <option value="Primeira vaga">Conseguir primeira vaga</option>
+            <option value="Migrar">Mudar de área</option>
+            <option value="cargo salário">Melhorar Cargo/salário</option>
+            <option value="Processo seletivo">Evoluir desempenho em processos seletivos</option>
+        </Select>
+        </label>
+        </div>
+
+        <div class="mb-3">
+            <label for="perfil" class="form-label">Disponibilidade para mentoria:</label>
+            <p>
+                <input type="checkbox" name="manhã" value="Manhã" > Manhã  
+                <input type="checkbox" name="tarde" value="Tarde"> Tarde 
+                <input type="checkbox" name="noite" value="Noite"> Noite    
+                <input type="checkbox" value="Fim de semana"> Fim de semana 
+            </p>
+            </label>
+        </div>
+
+        <div class="mb-3">
         <label for="mensagem" class="form-label">Fale um pouco sobre sua jornada e objetivos</label>
         <textarea placeholder="Fale sobre você, suas experiências e objetivos de carreira" class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
         </div>
         
-        <button id="my-form-button" class="btn btn-primary w-100" type="submit">Enviar inscrição</button>
+        <button id="my-form-button" class="btn btn-primary w-100" type="submit">Enviar e garantir o Brinde</button>
     </form>
 </div>
 
